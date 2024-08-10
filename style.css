@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 5rem;
+    line-height: 1.1;
+    letter-spacing: -0.1rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.1rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.line{
+    border: 0.1rem solid var(--netral-color-light);
+    max-width: 100%; 
+    min-height: 0.1rem;
+    display: block;
+    border-radius: 999rem;
+}
+
+.thick{
+    font-weight: 700;
+}
+
+.text-main-color{
+    color: var(--main-blue);
+}
+
+.justify{
+    text-align: justify;
+}
+
+.bg-off-white{
+    background: var(--second-bg-color);
+}
+
+.btn{
+    border-radius: 1000rem;
+    padding: 0.75em 1.2em;
+    transition: .3s;
+}
+
+img{
+    max-width: 100%;
+}
+
+.section-margins{
+    margin: 0 5rem;
+}
+
+@media (max-width: 27.5em){
+    .section-margins{
+        margin: 0 2rem;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: white;
+    --second-bg-color: rgb(245, 245, 245);
+    --netral-color: rgb(138, 138, 138);
+    --netral-color-light: rgb(206, 206, 206);
+    --text-color: black;
+    --main-color: linear-gradient(rgb(78, 92, 249), rgb(216, 246, 255));
+    --main-blue: rgb(78, 92, 249);
+    --lighter-main-blue: rgb(148, 157, 252);
+}
+
+/* header */
+header{
+    padding: 0.5em 2em;
+    width: 100%;
+    box-shadow: 0 0 0.1rem 0.05rem rgb(188, 188, 188);
+    display: flex;
+    align-items: center;
+    background: var(--bg-color);
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+
+header :nth-child(1){
+    width: 3rem;
+    cursor: pointer;
+}
+
+header :nth-child(2){
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/* header end */
+
+/* hero start */
+.container{
+    max-width: 100%;
+    padding: 9.25rem 0 7rem 0;
+}
+
+.hero{
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.hero :nth-child(1){
+    font-weight: 600;
+    color: var(--netral-color);
+    margin-bottom: 0.5rem;
+}
+
+.hero :nth-child(2){
+    font-weight: 900;
+    margin-top: 0.5rem;
+}
+
+.hero :nth-child(3){
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    max-width: 30ch;
+}
+
+.hero-btn{
+    background: var(--main-color);
+    font-weight: 600;
+    color: var(--bg-color);
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+/* hero end */
+
+
+/* footer start */
+    #footer{
+        background: var(--bg-color);
+        padding: 1rem 0;
+    }
+
+    .footer{
+        text-align: center;
+    }
+/* footer end */
